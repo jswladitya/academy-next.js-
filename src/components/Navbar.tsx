@@ -1,6 +1,6 @@
-"use client";
+"use client"; //for ui manipulation or if i need to use react hooks
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import { HoveredLink, Menu, MenuItem} from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -21,11 +21,11 @@ function Navbar({ className }: { className?: string }) {
 
         <MenuItem setActive={setActive} active={active} item="Our Courses">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">All Courses</HoveredLink>
-            <HoveredLink href="/web-dev">Basic Music Theory</HoveredLink>
-            <HoveredLink href="/web-dev">Advanced Composition</HoveredLink>
-            <HoveredLink href="/web-dev">Songwriting</HoveredLink>
-            <HoveredLink href="/web-dev">Music Production</HoveredLink>
+            <HoveredLink href="/all-courses">All Courses</HoveredLink>
+            <HoveredLink href="/music-theory">Basic Music Theory</HoveredLink>
+            <HoveredLink href="/advanced-composition">Advanced Composition</HoveredLink>
+            <HoveredLink href="/songwriting">Songwriting</HoveredLink>
+            <HoveredLink href="/music-production">Music Production</HoveredLink>
           </div>
         </MenuItem>
 
